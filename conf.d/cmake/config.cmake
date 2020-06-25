@@ -38,7 +38,7 @@ set(PROJECT_CMAKE_CONF_DIR "conf.d")
 
 # Compilation Mode (DEBUG, RELEASE)
 # ----------------------------------
-set(CMAKE_BUILD_TYPE "RELEASE")
+set(BUILD_TYPE "RELEASE")
 #set(USE_EFENCE 1)
 
 # Kernel selection if needed. You can choose between a
