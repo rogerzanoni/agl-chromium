@@ -20,19 +20,11 @@ CMAKE_MINIMUM_REQUIRED(VERSION 3.3)
 
 include(${CMAKE_CURRENT_SOURCE_DIR}/conf.d/cmake/config.cmake)
 
-add_custom_command(OUTPUT ${PROJECT_PKG_BUILD_DIR}/runxdg.toml
-  COMMAND mkdir -p ${PROJECT_PKG_BUILD_DIR}
-  COMMAND cp ${CMAKE_CURRENT_SOURCE_DIR}/runxdg.toml ${PROJECT_PKG_BUILD_DIR}/runxdg.toml
-)
-
-add_custom_target(runxdg_toml DEPENDS ${PROJECT_PKG_BUILD_DIR}/runxdg.toml)
-add_dependencies(widget runxdg_toml)
-
-add_custom_command(OUTPUT ${PACKAGE_BINDIR}/runxdg
+add_custom_command(OUTPUT ${PACKAGE_BINDIR}/runchrome
   COMMAND mkdir -p ${PACKAGE_BINDIR}
-  COMMAND cp ${CMAKE_CURRENT_SOURCE_DIR}/runxdg.sh ${PACKAGE_BINDIR}/runxdg
-  COMMAND chmod +x ${PACKAGE_BINDIR}/runxdg
+  COMMAND cp ${CMAKE_CURRENT_SOURCE_DIR}/runchrome.sh ${PACKAGE_BINDIR}/runchrome
+  COMMAND chmod +x ${PACKAGE_BINDIR}/runchrome
 )
 
-add_custom_target(runxdg_script DEPENDS ${PACKAGE_BINDIR}/runxdg)
-add_dependencies(widget runxdg_script)
+add_custom_target(runchrome_script DEPENDS ${PACKAGE_BINDIR}/runchrome)
+add_dependencies(widget runchrome_script)

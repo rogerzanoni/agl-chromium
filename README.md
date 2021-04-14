@@ -1,4 +1,4 @@
-# Chromium68 browser service
+# Chromium84 browser service
 
 ## Overview
 
@@ -15,13 +15,13 @@ application framework recipes.
 ## Implementation notes
 
 This package does not contain the browser itself:
-* chromium68 recipe will build Chromium68, and the WAM webview.
-* chromium68 installed package will contain libcbe.so, that is a shared
-  library used both by Chromium68 browser and by WAM.
-* chromium68-browser installed package contains the actual executable
+* chromium84 recipe will build Chromium84, and the WAM webview.
+* chromium84 installed package will contain libcbe.so, that is a shared
+  library used both by Chromium84 browser and by WAM.
+* chromium84-browser installed package contains the actual executable
   and resources that are specific to the browser, but not used by WAM.
-* chromium68-browser-service prepares a wgt file that points to the
-  executable installed by chromium68-browser.
+* chromium84-browser-service prepares a wgt file that points to the
+  executable installed by chromium84-browser.
 
 ## Copyright and License Information
 Copyright (c) 2018 LG Electronics, Inc.
