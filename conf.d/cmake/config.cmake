@@ -18,8 +18,8 @@
 
 # Project Info
 # ------------------
-set(PROJECT_NAME chromium68-browser-service)
-set(PROJECT_PRETTY_NAME "Chromium68 browser service")
+set(PROJECT_NAME chromium84-browser-service)
+set(PROJECT_PRETTY_NAME "Chromium84 browser service")
 set(PROJECT_DESCRIPTION "AGL widget service for Chromium browser")
 set(PROJECT_URL "https://webosose.org")
 set(PROJECT_VERSION "1.0")
@@ -151,7 +151,7 @@ set(WIDGET_TYPE application/vnd.agl.native)
 # This is the file that will be executed, loaded,
 # at launch time by the application framework.
 #
-set(WIDGET_ENTRY_POINT bin/runxdg)
+set(WIDGET_ENTRY_POINT bin/runchrome)
 
 # Optional dependencies order
 # ---------------------------
